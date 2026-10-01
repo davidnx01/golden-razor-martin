@@ -1,0 +1,307 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Barber Golden Razor Martin · barbershop v Martine — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Barber Golden Razor Martin — pánske strihy, úprava fúzov a holenie na Andreja Kmeťa v Martine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hide:#15110d;--hide-2:#1d1813;--hide-3:#0d0a08;
+  --bone:#ece3cc;--bone-dim:rgba(236,227,204,.66);--seam:rgba(236,227,204,.13);
+  --gold:#d6b25e;
+  --foil:linear-gradient(100deg,#8a6826 0%,#e9cd7b 26%,#b48d3b 50%,#f4df9c 68%,#9a752f 100%);
+  --ink:#1b150d;
+  --serif:"Cinzel",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--hide);color:var(--bone);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .85 0 0 0 0 .75 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(120% 70% at 70% 0%,#241d16 0%,transparent 60%);
+  padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lbl{font:600 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--bone-dim)}
+.num{font-variant-numeric:tabular-nums}
+a.num,.voucher a{white-space:nowrap}
+
+.notice{background:var(--hide-3);color:var(--bone);font-size:13.5px;line-height:1.45;text-align:center;padding:9px 16px;border-bottom:1px solid var(--seam)}
+
+header{border-bottom:1px solid var(--seam)}
+.bar{display:flex;align-items:center;gap:28px;min-height:76px}
+.mark{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.mark b{font:700 22px/1 var(--serif);letter-spacing:.08em}
+.mark small{font:500 11px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--bone-dim);margin-top:6px}
+nav{display:flex;gap:26px;margin-left:auto}
+nav a,.tel{text-decoration:none;font-size:15px;color:var(--bone-dim);background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:background-size .2s,color .2s;padding:12px 0}
+nav a:hover,.tel:hover{background-size:100% 1px;color:var(--bone)}
+.tel{color:var(--bone);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:2px;text-decoration:none;font:600 15px/1 var(--sans);letter-spacing:.04em}
+.btn-foil{background:var(--foil);color:var(--ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(0,0,0,.25)}
+.btn-foil:hover{filter:brightness(1.07)}
+.btn-blind{border:1px solid rgba(236,227,204,.28);color:var(--bone)}
+.btn-blind:hover{border-color:var(--gold)}
+
+/* hero — pečatná doska */
+.hero{padding:clamp(40px,7vw,88px) 0 clamp(48px,7vw,80px)}
+.hero .wrap.top{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px);align-items:center}
+.kicker{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.kicker svg{width:74px;height:auto;flex:none}
+h1{font:600 clamp(44px,6.6vw,86px)/.98 var(--serif);letter-spacing:.02em}
+h1 .sm{display:block;font-size:.3em;letter-spacing:.34em;font-weight:500;color:var(--bone-dim);-webkit-text-fill-color:var(--bone-dim);margin-bottom:.9em}
+h1 .city{display:block;font-size:.42em;letter-spacing:.28em;margin-top:.45em}
+.lead{max-width:34em;margin:26px 0 30px;color:var(--bone-dim);font-size:18px}
+.lead strong{color:var(--bone);font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.plate{position:relative;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(closest-side,#000 70%,#0c0907 100%);
+  box-shadow:inset 0 3px 8px rgba(0,0,0,.85),inset 0 -1px 0 rgba(236,227,204,.08),0 1px 0 rgba(236,227,204,.07);display:grid;place-items:center;overflow:hidden;max-width:520px;justify-self:end;width:100%}
+.plate::after{content:"";position:absolute;inset:14px;border-radius:50%;border:1px solid rgba(214,178,94,.32)}
+.plate img{width:86%;mix-blend-mode:lighten}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(44px,6vw,72px);border-top:1px solid var(--seam);border-bottom:1px solid var(--seam)}
+.facts div{padding:20px 22px;border-left:1px solid var(--seam)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:600 26px/1.15 var(--serif);margin-bottom:4px}
+.facts span{font-size:14px;color:var(--bone-dim)}
+
+/* služby — zlatá fólia, jediný kontrastný blok */
+.services{padding:clamp(24px,4vw,40px) 0 clamp(56px,8vw,96px)}
+.leaf{background:var(--foil);color:var(--ink);padding:clamp(28px,5vw,64px);position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.leaf::before{content:"";position:absolute;inset:12px;border:1px solid rgba(27,21,13,.35);pointer-events:none}
+.leaf-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(22px,3vw,36px)}
+.leaf h2{font:700 clamp(34px,4.6vw,56px)/1 var(--serif);letter-spacing:.03em;text-shadow:0 1px 0 rgba(255,240,200,.45)}
+.leaf .lbl{color:rgba(27,21,13,.72)}
+.svc{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(28px,5vw,64px)}
+.svc li{display:flex;gap:18px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(27,21,13,.28)}
+.svc li:nth-last-child(-n+2){border-bottom:1px solid rgba(27,21,13,.28)}
+.svc h3{font:600 21px/1.25 var(--serif);letter-spacing:.02em;flex:1}
+.svc p{font-size:15px;line-height:1.45;color:rgba(27,21,13,.78);max-width:15em;text-align:right}
+.leaf .note{margin-top:22px;font-size:14px;line-height:1.5;color:rgba(27,21,13,.8);max-width:46em}
+.leaf .note b{font-weight:600}
+
+/* ocenenia */
+.medals{padding:0 0 clamp(56px,8vw,96px)}
+.sec-h{display:flex;align-items:center;gap:18px;margin-bottom:28px}
+.sec-h h2{font:600 clamp(28px,3.4vw,40px)/1.05 var(--serif);letter-spacing:.03em}
+.sec-h svg{width:64px;flex:none}
+.row{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,2vw,24px);align-items:start}
+.medal{text-align:center}
+.disc{aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;max-width:150px;
+  box-shadow:inset 0 2px 6px rgba(0,0,0,.6),0 1px 0 rgba(236,227,204,.08);background:var(--hide-2);position:relative}
+.disc::before{content:"";position:absolute;inset:8%;border-radius:50%;background:var(--foil)}
+.disc.ag::before{background:linear-gradient(100deg,#77746d,#e3e0d8 30%,#9d9a92 55%,#f2efe8 72%,#85827b)}
+.disc span{position:relative;font:700 clamp(18px,2.4vw,28px)/1 var(--serif);color:var(--ink);letter-spacing:.04em}
+.medal b{display:block;font-weight:600;font-size:15px}
+.medal small{font-size:13px;color:var(--bone-dim)}
+.medals .src{margin-top:24px;font-size:14px;color:var(--bone-dim)}
+
+/* z kresla + poukážka */
+.work{padding:0 0 clamp(56px,8vw,96px)}
+.work .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
+.cuts{display:grid;grid-template-columns:235px 197px;gap:14px;align-items:end;margin-top:6px}
+.frame{background:var(--hide-3);padding:8px;box-shadow:inset 0 2px 5px rgba(0,0,0,.7),0 1px 0 rgba(236,227,204,.07);overflow:hidden}
+.frame img{transition:transform .5s ease}
+.frame:hover img{transform:scale(1.045)}
+.cap{font-size:14px;color:var(--bone-dim);margin-top:14px;max-width:30em}
+.voucher{border:1px solid var(--seam);padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
+.voucher .frame{padding:6px}
+.voucher h3{font:600 24px/1.15 var(--serif);margin:8px 0 10px}
+.voucher p{font-size:15.5px;color:var(--bone-dim)}
+.voucher a{color:var(--bone)}
+
+/* kontakt */
+.contact{border-top:1px solid var(--seam);padding:clamp(48px,7vw,88px) 0}
+.contact .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px)}
+.contact h2{grid-column:1/-1;font:600 clamp(28px,3.4vw,40px)/1.05 var(--serif);letter-spacing:.03em}
+.cblock .lbl{display:block;margin-bottom:10px}
+.cblock p{font-size:17px}
+.cblock .big{font:600 24px/1.2 var(--serif);letter-spacing:.02em}
+.cblock small{display:block;font-size:14px;color:var(--bone-dim);margin-top:8px;line-height:1.5}
+.cblock a{text-decoration:none;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.cblock a:hover{background-size:100% 1px}
+.links{list-style:none}
+.links li{border-top:1px solid var(--seam)}
+.links li:last-child{border-bottom:1px solid var(--seam)}
+.links a{display:flex;justify-content:space-between;align-items:center;min-height:48px;background:none}
+.links a:hover{color:var(--gold)}
+
+footer{border-top:1px solid var(--seam);padding:28px 0;font-size:14px;color:var(--bone-dim)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;grid-template-columns:1.3fr 1fr;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(13,10,8,.96);border-top:1px solid var(--seam)}
+.mbar .btn{min-height:50px;padding:0 12px}
+
+@media (max-width:900px){
+  nav{display:none}
+  .hero .wrap.top{grid-template-columns:1fr}
+  .plate{justify-self:center;max-width:360px;order:-1}
+  .svc{grid-template-columns:1fr}
+  .svc li:nth-last-child(2){border-bottom:0}
+  .work .wrap{grid-template-columns:1fr}
+  .contact .wrap{grid-template-columns:1fr}
+  .row{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .bar{min-height:64px}
+  .bar .tel,.bar .btn{display:none}
+  .facts{grid-template-columns:1fr}
+  .facts div{border-left:0;padding:16px 0;border-top:1px solid var(--seam)}
+  .facts div:first-child{border-top:0}
+  .svc li{flex-direction:column;gap:4px}
+  .svc p{text-align:left;max-width:none}
+  .row{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+  .disc span{font-size:15px}
+  .medal b{font-size:13px}
+  .medal small{display:none}
+  .cuts{grid-template-columns:1fr 1fr}
+  .voucher{grid-template-columns:1fr}
+  .voucher .frame{max-width:260px}
+  .mbar{display:grid}
+  .plate{max-width:300px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top" aria-label="Golden Razor — na začiatok"><b class="foil">Golden Razor</b><small>Barber · Martin</small></a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="#sluzby">Služby</a>
+      <a href="#ocenenia">Ocenenia</a>
+      <a href="#poukazka">Poukážka</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel num" href="tel:+421919413731">0919 413 731</a>
+    <a class="btn btn-foil" href="tel:+421919413731">Zavolať</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap top">
+    <div>
+      <div class="kicker">
+        <svg viewBox="0 0 120 24" aria-hidden="true"><defs><linearGradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#8a6826"/><stop offset=".3" stop-color="#e9cd7b"/><stop offset=".55" stop-color="#b48d3b"/><stop offset=".75" stop-color="#f4df9c"/><stop offset="1" stop-color="#9a752f"/></linearGradient></defs><path d="M2 14 L58 9 Q66 8.5 70 11 L74 14 L70 17 Q66 19 58 18.6 Z" fill="none" stroke="url(#fg)" stroke-width="1.4"/><path d="M74 14 H116 Q119 14 118 12 L112 7" fill="none" stroke="url(#fg)" stroke-width="1.4" stroke-linecap="round"/><circle cx="78" cy="14" r="1.6" fill="url(#fg)"/></svg>
+        <span class="lbl">Barbershop · Andreja Kmeťa, Martin</span>
+      </div>
+      <h1 id="h1"><span class="sm">Barber</span><span class="foil">Golden Razor</span><span class="city foil">Martin</span></h1>
+      <p class="lead"><strong>Pánske strihy nožnicami aj strojčekom, úprava fúzov a tradičné holenie brady či hlavy.</strong> Barbershop v Martine, ktorý na portáli Orly kaderníctva drží zlatú medailu štyri roky po sebe.</p>
+      <div class="ctas">
+        <a class="btn btn-foil num" href="tel:+421919413731">Zavolať · 0919 413 731</a>
+        <a class="btn btn-blind" href="https://www.google.com/maps/search/Barber+Golden+Razor+Martin+Martin" rel="noopener">Ako sa k nám dostať</a>
+      </div>
+    </div>
+    <div class="plate"><img src="assets/golden-razor-erb.webp" width="880" height="810" alt="Logo Barbershop Golden Razor — dve prekrížené zlaté britvy" fetchpriority="high"></div>
+  </div>
+  <div class="wrap">
+    <div class="facts">
+      <div><b class="foil num">4,8 ★</b><span class="num">56 hodnotení na Orly kaderníctva (+ 3 × 5,0 ★)</span></div>
+      <div><b class="foil num">2023 – 2026</b><span>zlatá medaila Orly kaderníctva každý rok</span></div>
+      <div><b class="foil">Martin</b><span>Andreja Kmeťa 579/15, 036 01 Martin</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="sluzby" aria-labelledby="h-sluzby">
+  <div class="wrap">
+    <div class="leaf">
+      <div class="leaf-head">
+        <h2 id="h-sluzby">Služby</h2>
+        <span class="lbl">Starostlivosť o mužov</span>
+      </div>
+      <ul class="svc">
+        <li><h3>Strih nožnicami aj strojčekom</h3><p>cenu doplní podnik</p></li>
+        <li><h3>Úprava fúzov</h3><p>cenu doplní podnik</p></li>
+        <li><h3>Tradičné holenie brady</h3><p>cenu doplní podnik</p></li>
+        <li><h3>Holenie hlavy</h3><p>cenu doplní podnik</p></li>
+        <li><h3>Styling vlasov</h3><p>cenu doplní podnik</p></li>
+        <li><h3>Umývanie vlasov</h3><p>súčasť služby</p></li>
+      </ul>
+      <p class="note"><b>Ukážka návrhu: cenník doplní podnik.</b> Zoznam služieb podľa profilu na Orly kaderníctva (1. 10. 2026), overiť. Cenník ani online rezervácia v dostupných profiloch zatiaľ nie sú — termín dohodnete telefonicky.</p>
+    </div>
+  </div>
+</section>
+
+<section class="medals" id="ocenenia" aria-labelledby="h-ocenenia">
+  <div class="wrap">
+    <div class="sec-h">
+      <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M2 14 L58 9 Q66 8.5 70 11 L74 14 L70 17 Q66 19 58 18.6 Z" fill="none" stroke="url(#fg)" stroke-width="1.4"/><path d="M74 14 H116 Q119 14 118 12 L112 7" fill="none" stroke="url(#fg)" stroke-width="1.4" stroke-linecap="round"/><circle cx="78" cy="14" r="1.6" fill="url(#fg)"/></svg>
+      <h2 id="h-ocenenia">Ocenenia Orly</h2>
+    </div>
+    <div class="row">
+      <div class="medal"><div class="disc ag"><span class="num">2022</span></div><b>Strieborná</b><small>medaila</small></div>
+      <div class="medal"><div class="disc"><span class="num">2023</span></div><b>Zlatá</b><small>medaila</small></div>
+      <div class="medal"><div class="disc"><span class="num">2024</span></div><b>Zlatá</b><small>medaila</small></div>
+      <div class="medal"><div class="disc"><span class="num">2025</span></div><b>Zlatá</b><small>medaila</small></div>
+      <div class="medal"><div class="disc"><span class="num">2026</span></div><b>Zlatá</b><small>medaila</small></div>
+    </div>
+    <p class="src num">Podľa profilu na Orly kaderníctva, 1. 10. 2026: 9,6 / 10 z 59 hodnotení (56 × 4,8 ★ a 3 × 5,0 ★).</p>
+  </div>
+</section>
+
+<section class="work" id="poukazka" aria-labelledby="h-work">
+  <div class="wrap">
+    <div>
+      <div class="sec-h">
+        <h2 id="h-work">Z kresla</h2>
+      </div>
+      <div class="cuts">
+        <div class="frame"><img src="assets/strih-fade-vzor.webp" width="235" height="235" loading="lazy" alt="Pánsky strih zozadu — fade s vyholeným vzorom na boku"></div>
+        <div class="frame"><img src="assets/strih-textura-vzor.webp" width="197" height="197" loading="lazy" alt="Textúrovaný strih s vyholenými linkami nad uchom"></div>
+      </div>
+      <p class="cap">Fade, textúra a vyholené linky — fotky z ich facebookovej stránky.</p>
+    </div>
+    <div class="voucher">
+      <div class="frame"><img src="assets/darcekova-poukazka.webp" width="315" height="315" loading="lazy" alt="Ruka drží dve zlato-čierne darčekové poukážky Golden Razor na celkovú úpravu vizáže"></div>
+      <div>
+        <span class="lbl">Darček</span>
+        <h3>Darčeková poukážka</h3>
+        <p>„Celková úprava vizáže“ — poukážku ukazujú na svojom Facebooku. Hodnotu a dostupnosť si overte telefonicky na <a class="num" href="tel:+421919413731">0919 413 731</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <h2 id="h-kontakt">Kontakt</h2>
+    <div class="cblock">
+      <span class="lbl">Adresa</span>
+      <p class="big">Andreja Kmeťa 579/15</p>
+      <p>036 01 Martin</p>
+      <small><a href="https://www.google.com/maps/search/Barber+Golden+Razor+Martin+Martin" rel="noopener">Otvoriť v Google Maps →</a></small>
+    </div>
+    <div class="cblock">
+      <span class="lbl">Telefón a hodiny</span>
+      <p class="big num"><a href="tel:+421919413731">0919 413 731</a></p>
+      <small>Číslo z ich facebookovej stránky.</small>
+      <small class="num">Otváracie hodiny: v oznamoch na Facebooku spomínajú „bežné otváracie hodiny“ 9:00 – 18:00 — dni v týždni overiť.</small>
+    </div>
+    <div class="cblock">
+      <span class="lbl">Online</span>
+      <ul class="links">
+        <li><a href="https://www.facebook.com/518883745279215" rel="noopener">Facebook <span aria-hidden="true">→</span></a></li>
+        <li><a href="https://www.orlykadernictva.eu/profile-1053-barbershop-golden-razor" rel="noopener">Profil na Orly kaderníctva <span aria-hidden="true">→</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fakty: Orly kaderníctva a FB stránka podniku, 1. 10. 2026</span></div>
+</footer>
+
+<div class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-foil" href="tel:+421919413731">Zavolať</a>
+  <a class="btn btn-blind" href="https://www.google.com/maps/search/Barber+Golden+Razor+Martin+Martin" rel="noopener">Mapa</a>
+</div>
+</html>
